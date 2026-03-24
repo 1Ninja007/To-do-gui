@@ -1,0 +1,171 @@
+.text-area .content {
+   -fx-background-color: #5c5349;
+   -fx-border-color: #5c5349;
+   -fx-border-width: 10;
+   -fx-text-color: #2b2621;
+}
+
+.date-picker .content {
+    -fx-background-color: #5c5349;
+   -fx-border-color: #5c5349;
+   -fx-border-width: 10;
+   -fx-text-color: #2b2621;
+}
+
+.table-view .column-header{
+    -fx-background-color: #8f857b;
+   -fx-text-color: #2b2621;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #2b2621;
+   -fx-text-color: #2b2621;
+}
+
+.table-view-row {
+    -fx-border-color: transparent;
+   -fx-text-color: #2b2621;
+    -fx-border-color: #2b2621;
+    -fx-border-width: 0.5;
+}
+
+.table-view-column {
+    -fx-border-color: #2b2621;
+    -fx-border-width: 0.5;
+}
+
+.table-row-cell{
+    -fx-background-color: -fx-table-cell-border-color, #5c5349;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-border-color: transparent;
+   -fx-text-color: #2b2621;
+}
+
+.table-row-cell:odd{
+    -fx-background-color: -fx-table-cell-border-color, #5c5349;
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em;
+    -fx-border-color: transparent;
+   -fx-text-color: #2b2621;
+}
+
+.table-row-cell:selected {
+    -fx-background-color: #7e826c;
+    -fx-text-color: #535744;
+    -fx-background-insets: 0;
+    -fx-background-radius: 1;
+    -fx-border-color: transparent;
+}
+
+.text-field .content {
+   -fx-text-color: #2b2621;
+}
+
+
+* {
+    /*brazowy tlo*/
+	-fx-primary-color: #5c5349;
+	/*brazowy tekst*/
+	-fx-secondary-color: #2b2621;
+	-fx-light-green-color: #7e826c;
+	-fx-lighter-brown-color: #8f857b;
+
+	-fx-focus-color: -fx-secondary-color;
+    -fx-text-color: -fx-secondary-color;
+}
+
+.date-picker .arrow-button {
+	-fx-background-color: -fx-primary-color;
+	-fx-background-radius: 0;
+}
+.date-picker .arrow-button:hover {
+	-fx-background-color: -fx-secondary-color;
+}
+.date-picker .arrow-button .arrow {
+	-fx-background-color: -fx-lighter-brown-color;
+}
+.date-picker .cell {
+	-fx-background-color: -fx-lighter-brown-color;
+}
+.date-picker .cell:hover {
+	-fx-background-color: -fx-light-green-color;
+}
+.date-picker .cell:focused {
+	-fx-background-color: -fx-light-green-color;
+}
+.date-picker .selected {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: -fx-lighter-brown-color;
+}
+.date-picker .selected:focused {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-fill: -fx-lighter-brown-color;
+}
+.date-picker-popup  {
+	-fx-border-color: transparent;
+}
+.date-picker-popup .month-year-pane {
+	-fx-background-color: -fx-primary-color;
+	-fx-text-color: -fx-secondary-color;
+}
+.date-picker-popup .month-year-pane .label {
+	-fx-text-fill: -fx-lighter-brown-color;
+}
+.date-picker-popup .week-number-cell {
+	-fx-text-fill: -fx-secondary-color;
+}
+.date-picker-popup .spinner .button .left-arrow,
+.date-picker-popup .spinner .button .right-arrow {
+	-fx-background-color: -fx-lighter-brown-color;
+}
+.date-picker .text-field {
+    -fx-control-inner-background: -fx-primary-color ;
+    -fx-text-fill: -fx-secondary-color;
+    -fx-font-family: Arial Black;
+}
+
+
+.choice-box {
+  -fx-background-color: black;
+  -fx-mark-color: #2b2621; // arrow color
+}
+
+// Selected item text color on the control itself
+.choice-box > .label {
+    -fx-text-fill: #2b2621;
+}
+
+// Background color of the whole context menu
+.choice-box .context-menu {
+    -fx-background-color: -fx-primary-color;
+}
+// Focused item background color in the list
+.choice-box .menu-item:focused {
+    -fx-background-color: -fx-secondary-color;
+}
+// Text color of non-focused items in the list
+.choice-box .menu-item > .label {
+    -fx-text-fill: -fx-secondary-color;
+}
+// Text color of focused item in the list
+.choice-box .menu-item:focused > .label {
+    -fx-text-fill: -fx-primary-color;
+}
+
+
+.text-field {
+    -fx-prompt-text-fill: -fx-secondary-color;
+    -fx-text-fill: -fx-secondary-color;
+}
+
+
+.text-area {
+    -fx-prompt-text-fill: -fx-secondary-color;
+    -fx-text-fill: -fx-secondary-color;
+}
+
+
+.label {
+    -fx-alignment: baseline-center;
+}

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="800.0" style="-fx-background-color: #535744;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.todoapp.controller.AddTaskController">
+   <children>
+      <AnchorPane layoutY="99.0" prefHeight="1080.0" prefWidth="1920.0" style="-fx-background-color: #7e826c;">
+         <children>
+            <TextArea fx:id="descriptionTextArea" layoutX="300.0" layoutY="61.0" prefHeight="180.0" prefWidth="200.0" promptText="Description" style="-fx-background-color: #5c5349; -fx-background-radius: 0;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></TextArea>
+            <ChoiceBox fx:id="priorityChoiceBox" layoutX="300.0" layoutY="297.0" prefHeight="25.0" prefWidth="200.0" style="-fx-background-color: #5c5349; -fx-background-radius: 2;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></ChoiceBox>
+            <DatePicker fx:id="datePicker" layoutX="300.0" layoutY="256.0" onAction="#getDate" prefHeight="25.0" prefWidth="200.0" promptText="Date" style="-fx-background-color: #5c5349; -fx-background-radius: 2; -fx-border-color: #5c5349;">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></DatePicker>
+            <TextField fx:id="titleTextField" layoutX="300.0" layoutY="21.0" prefHeight="25.0" prefWidth="200.0" promptText="Title" style="-fx-background-color: #5c5349; -fx-border-radius: 2;">
+               <cursor>
+                  <Cursor fx:constant="TEXT" />
+               </cursor>
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font></TextField>
+         </children>
+      </AnchorPane>
+      <Label layoutX="275.0" layoutY="14.0" text="To Do App" textFill="#2b2621">
+         <font>
+            <Font name="Arial Black" size="48.0" />
+         </font>
+      </Label>
+      <Button fx:id="addButton" layoutX="691.0" layoutY="28.0" mnemonicParsing="false" onAction="#onAddTaskButtonClick" style="-fx-background-color: #2b2621; -fx-background-radius: 10;" text="Add" textFill="#5c5349">
+         <font>
+            <Font name="Arial Black" size="20.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
