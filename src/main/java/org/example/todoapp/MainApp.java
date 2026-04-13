@@ -21,10 +21,8 @@ import java.time.chrono.ChronoLocalDate;
 import java.util.ArrayList;
 
 public class MainApp extends Application {
-//    public static ObservableList<Task> taskServce;
     public static TaskService taskService = new TaskService();
 
-//    public ObservableList<Task> tasksList = null;
     @Override
     public void start(Stage stage) throws IOException {
 

@@ -6,8 +6,6 @@ module org.example.todoapp {
     requires javafx.base;
     requires java.sql;
     requires jdk.compiler;
-//    requires org.example.todoapp;
-//    requires mysql.connector.j;
 
 
     opens org.example.todoapp to javafx.fxml;

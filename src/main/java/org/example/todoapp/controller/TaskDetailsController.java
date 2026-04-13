@@ -1,6 +1,5 @@
 package org.example.todoapp.controller;
 
-//import com.mysql.cj.protocol.a.UtilDateValueEncoder;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -52,7 +51,6 @@ public class TaskDetailsController {
         AnchorPane.setLeftAnchor(titleLabel, 200.0);
         AnchorPane.setRightAnchor(titleLabel, 200.0);
         dateLabel.setAlignment(Pos.CENTER);
-//        descriptionLabel.setAlignment(Pos.CENTER);
         priorityLabel.setAlignment(Pos.CENTER);
         titleLabel.setAlignment(Pos.CENTER);
     }

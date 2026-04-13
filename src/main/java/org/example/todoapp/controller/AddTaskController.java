@@ -48,19 +48,10 @@ public class AddTaskController implements Initializable {
     }
 
     public LocalDate getDate() {
-        LocalDate date = datePicker.getValue();
-
-//        String formattedDate = date.format(DateTimeFormatter.ofPattern("dd-MM-yyyy"));
-
-        return date;
+        return datePicker.getValue();
     }
 
     public void onAddTaskButtonClick(ActionEvent event) throws IOException {
-
-//        TasksController.addTask(new Task(titleTextField.getText(), descriptionTextArea.getText(), getDate(), priorityChoiceBox.getValue()));
-
-//        Parent root = FXMLLoader.load(MainApp.class.getResource("tasks_view.fxml"));
-
         if (titleTextField.getText() == null || titleTextField.getText().trim().isEmpty()) {
             Alert alert = new Alert(Alert.AlertType.WARNING);
             alert.setTitle("Title warning");
@@ -73,8 +64,6 @@ public class AddTaskController implements Initializable {
 
         FXMLLoader loader = new FXMLLoader(MainApp.class.getResource("tasks_view.fxml"));
         Parent root = loader.load();
-
-//        MainViewController mainViewController = loader.getController();
 
         MainApp.taskService.addTask(new Task(titleTextField.getText(), descriptionTextArea.getText(), getDate(), priorityChoiceBox.getValue()));
 

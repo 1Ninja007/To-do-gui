@@ -131,24 +131,24 @@
   -fx-mark-color: #2b2621; // arrow color
 }
 
-// Selected item text color on the control itself
+/* Selected item text color on the control itself */
 .choice-box > .label {
     -fx-text-fill: #2b2621;
 }
 
-// Background color of the whole context menu
+/* Background color of the whole context menu */
 .choice-box .context-menu {
     -fx-background-color: -fx-primary-color;
 }
-// Focused item background color in the list
+/* Focused item background color in the list */
 .choice-box .menu-item:focused {
     -fx-background-color: -fx-secondary-color;
 }
-// Text color of non-focused items in the list
+/* Text color of non-focused items in the list */
 .choice-box .menu-item > .label {
     -fx-text-fill: -fx-secondary-color;
 }
-// Text color of focused item in the list
+/* Text color of focused item in the list */
 .choice-box .menu-item:focused > .label {
     -fx-text-fill: -fx-primary-color;
 }

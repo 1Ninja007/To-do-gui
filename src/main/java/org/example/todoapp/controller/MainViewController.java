@@ -36,8 +36,6 @@ public class MainViewController {
     }
 
     public void onShowTasksButtonClick(javafx.event.ActionEvent event) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("tasks_view.fxml"));
-
         Parent root = FXMLLoader.load(MainApp.class.getResource("tasks_view.fxml"));
 
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();

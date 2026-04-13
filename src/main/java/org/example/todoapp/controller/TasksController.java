@@ -30,16 +30,11 @@ public class TasksController {
 
     @FXML
     private TableView<Task> tasksTableView;
-//
-//    public ObservableList<Task> tasksList = FXCollections.observableArrayList();
 
     @FXML
     void initialize() {
         var titleColumn = new TableColumn<Task, String>("Title");
         titleColumn.setCellValueFactory(new PropertyValueFactory<Task, String>("title"));
-
-//        var descriptionColumn = new TableColumn<Task, String>("Description");
-//        descriptionColumn.setCellValueFactory(new PropertyValueFactory<Task, String>("description"));
 
         var priorityColumn = new TableColumn<Task, String>("Priority");
         priorityColumn.setCellValueFactory(new PropertyValueFactory<Task, String>("priority"));
@@ -54,15 +49,12 @@ public class TasksController {
 
 
         tasksTableView.getColumns().add(titleColumn);
-//        tasksTableView.getColumns().add(descriptionColumn);
         tasksTableView.getColumns().add(dateColumn);
         tasksTableView.getColumns().add(priorityColumn);
         tasksTableView.getColumns().add(doneColumn);
     };
 
     public void onAddButtonClick(ActionEvent event) throws IOException {
-//        FXMLLoader fxmlLoader = new FXMLLoader(MainApp.class.getResource("add_task_view.fxml"));
-
         Parent root = FXMLLoader.load(Objects.requireNonNull(MainApp.class.getResource("add_task_view.fxml")));
 
         Stage stage = (Stage)((Node)event.getSource()).getScene().getWindow();
